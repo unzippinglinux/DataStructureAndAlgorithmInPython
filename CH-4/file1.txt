@@ -1,0 +1,12 @@
+This
+is 
+line 
+in 
+order
+And 
+reverse
+in
+line 
+is 
+This
+;)
