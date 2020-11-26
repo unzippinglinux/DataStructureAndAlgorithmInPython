@@ -38,13 +38,31 @@ class LinkedList:
 
         ## new_node.ref , self.head = self.head , new_node
 
+    def add_end(self, data):
+        new_node = Node(data)
+        #if the list is empty
+        if self.head == None:
+            self.head = new_node
+        else:
+            n = self.head
+            while n.ref is not None:
+                n = n.ref
 
+            n.ref = new_node
+
+
+##Code testing
 import random
 
 k = LinkedList()
-for i in [random.randint(1, 100) for _ in range(20)]:
+for i in [random.randint(1, 100) for _ in range(2)]:
     k.add_begin(i)
-    k.print_LL()
 
-print('Final Result')
+print('Add Begin Result')
+k.print_LL()
+
+for i in [random.randint(1, 100) for _ in range(2)]:
+    k.add_end(i)
+
+print('Add Begin Result')
 k.print_LL()
